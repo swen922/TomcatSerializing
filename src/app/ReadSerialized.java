@@ -37,7 +37,6 @@ public class ReadSerialized extends HttpServlet {
             String received = new String(input);
 
             ObjectMapper mapper = new ObjectMapper();
-            System.out.println("mapper created");
             MockProjectsList mplReceived = mapper.readValue(received, MockProjectsList.class);
 
             Map<Integer, Double> sourceMap = mplReceived.getMapToSerialize();
