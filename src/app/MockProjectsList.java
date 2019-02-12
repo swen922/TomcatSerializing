@@ -28,5 +28,11 @@ public class MockProjectsList {
         mapToSerialize.put(i, d);
     }
 
+    @Override
+    public String toString() {
+        return "MockProjectsList{" +
+                "mapToSerialize=" + mapToSerialize +
+                '}';
+    }
 }
 
